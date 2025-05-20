@@ -1,0 +1,16 @@
+name: Regular Workflow
+
+on:
+  schedule:
+    # Toutes les 10 minutes
+    - cron: '*/10 * * * *'
+    # Le 1er jour de chaque mois à 00:00
+    - cron: '0 0 1 * *'
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dire bonjour
+        run: echo "Hello, world!"
+        run: echo "Je suis Albert Einstein!!"
