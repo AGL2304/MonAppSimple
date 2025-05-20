@@ -6,7 +6,8 @@ jobs:
   display_env:
     runs-on: ubuntu-latest
     env:
-      MESSAGE: "Ceci est une variable d'environnement"
+      MESSAGE: Ceci est une variable d'environnement
     steps:
       - name: Afficher la variable MESSAGE
         run: echo "Le message est : $MESSAGE"
+
