@@ -1,0 +1,16 @@
+name: Message Types
+
+on: [push]
+
+jobs:
+  information_display:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Affichage d'une notice
+        run: echo "::notice ::Ceci est une notice."
+
+      - name: Affichage d'un avertissement
+        run: echo "::warning ::Ceci est un avertissement."
+
+      - name: Affichage d'une erreur
+        run: echo "::error ::Une erreur est survenue"
