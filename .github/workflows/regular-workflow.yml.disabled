@@ -3,7 +3,7 @@ name: Regular Workflow
 on:
   schedule:
     # Toutes les 2 minutes
-    - cron: '*/2 * * * *'
+    #- cron: '*/2 * * * *'
     # Le 1er jour de chaque mois à 00:00
     #- cron: '0 0 1 * *'
 
