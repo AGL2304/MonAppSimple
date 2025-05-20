@@ -16,9 +16,10 @@ on:
         required: true
         type: choice
         options:
-          - jedi
-          - sith
-          - rebel
+          - jeudi
+          - samedi
+          - vendredi
+          - dimanche 
 
 jobs:
   player_infos:
