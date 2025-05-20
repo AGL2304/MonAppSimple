@@ -1,0 +1,14 @@
+name: Readme Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Afficher le contenu du README
+        run: cat README.md
