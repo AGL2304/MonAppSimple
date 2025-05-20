@@ -1,0 +1,28 @@
+name: Manual Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "AGL2304"
+        required: true
+        type: string
+      level:
+        description: "Niveau"
+        required: true
+        type: string
+      class:
+        description: "Classe"
+        required: true
+        type: choice
+        options:
+          - jedi
+          - sith
+          - rebel
+
+jobs:
+  player_infos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher les infos du joueur
+        run: echo "Le joueur ${{ github.event.inputs.username }} est de niveau ${{ github.event.inputs.level }} et joue un ${{ github.event.inputs.class }}."
