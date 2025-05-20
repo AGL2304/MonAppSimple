@@ -1,0 +1,14 @@
+name: Groupe de logs
+
+on: [push]
+
+jobs:
+  log_group:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Groupe ecole-it
+        run: |
+          echo "::group::ecole-it"
+          echo "hello, ecole-it"
+          echo "::endgroup::"
+          echo "ceci n'est pas dans le groupe"
